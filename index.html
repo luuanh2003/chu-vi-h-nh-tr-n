@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Năm Nhuận</title>
+</head>
+<body>
+<script>
+    var year = parseInt(prompt('nhập 1 năm'));
+    var leapyear=false
+     chiahetcho4 = year % 4 == 0
+    if (chiahetcho4) {
+        chiahetcho100 = year % 100 == 0
+        if (chiahetcho100) {
+            chiahetcho400 = year % 400 == 0
+            if (chiahetcho400) {
+                leapyear =true
+            } else {
+                leapyear =true
+            }
+            if (leapyear) {
+                alert(year + 'là 1 năm nhuận')
+            }
+        } else {
+            alert(year + ' là 1 năm không nhuận')
+        }
+
+    }
+    </script>
+</body>
+</html>
